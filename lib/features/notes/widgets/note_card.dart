@@ -116,7 +116,7 @@ class NoteCard extends StatelessWidget {
                   const SizedBox(height: 8),
                   _actionButton(
                     icon: Icons.delete_outline,
-                    color: Colors.red,
+                    color: Colors.green,
                     onTap: onDelete,
                   ),
                 ],
