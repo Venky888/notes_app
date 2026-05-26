@@ -75,3 +75,4 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 >>>>>>> 933a38c (Initial commit - Notes app with BLoC & Hive)
+apk/

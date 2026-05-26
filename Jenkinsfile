@@ -25,5 +25,16 @@ pipeline {
                 sh 'flutter build apk --release'
             }
         }
+        stage('Copy APK') {
+            steps {
+                sh '''
+        mkdir -p "/Users/venkateshdevarampati/Downloads/Flutter Workspace/notes_app/apk"
+
+        cp build/app/outputs/flutter-apk/app-release.apk \
+        "/Users/venkateshdevarampati/Downloads/Flutter Workspace/notes_app/apk/"
+        '''
+            }
+        }
+
     }
 }
