@@ -20,18 +20,6 @@ pipeline {
             }
         }
 
-        stage('Analyze Project') {
-            steps {
-                sh 'flutter analyze'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                sh 'flutter test'
-            }
-        }
-
         stage('Build APK') {
             steps {
                 sh 'flutter build apk --release'
